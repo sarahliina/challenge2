@@ -137,7 +137,7 @@ function time() {
   seconds = checkTime(seconds);
 
   // Displays current time
-  document.getElementById("hour").innerHTML = moonOpacity(hour - 10) + ":";
+  document.getElementById("hour").innerHTML = moonOpacity(hour) + ":";
   document.getElementById("minutes").innerHTML = minutes + ":";
   document.getElementById("seconds").innerHTML = seconds;
 
@@ -182,7 +182,7 @@ time();
 
   // The next three variables are used to correct the offset of the sun
   // Sets new variable that is converting the current hours to radial degress for the rotation of the sun
-  var correctHours = (today.getHours() - 10) * 15;
+  var correctHours = today.getHours() * 15;
   // Sets new variable that is converting the current minutes to radial degress for the rotation of the sun
   var correctMinutes = today.getMinutes() * 0.25;
   // Sets new variable that is converting the current seconds to radial degress for the rotation of the sun
