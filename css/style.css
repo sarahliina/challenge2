@@ -30,7 +30,7 @@ main {
 
 .box {
    margin-top: 17%;
-   margin-left: -700px;
+   margin-left: -650px;
    padding: 20px;
 }
 
@@ -68,7 +68,7 @@ main {
    position: relative;
    width: 1100px;
    height: 1100px;
-   left: 180px;
+   left: 50px;
 }
 
 #sun {
