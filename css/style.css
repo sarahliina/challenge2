@@ -8,6 +8,7 @@ body {
    background: url(../images/mars.png) fixed;
    max-width: 1520px;
    height: 100%;
+   overflow: hidden;
 }
 
 h1 {

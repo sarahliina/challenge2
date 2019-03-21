@@ -141,12 +141,15 @@ function time() {
   document.getElementById("minutes").innerHTML = minutes + ":";
   document.getElementById("seconds").innerHTML = seconds;
 
+
+
   // Refreshes time once every second
   setTimeout(time, 1000);
 }
 
 // Runs time function
 time();
+
 
 // Anonymous function that gets triggered immediately
 (function() {
@@ -209,40 +212,6 @@ time();
     rotation: 360
   });
 }());
-
-// (function() {
-//
-//   var today = new Date();
-//   var hours = today.getHours();
-//
-//   var timelineClouds = new TimelineMax({
-//     repeat: -1
-//   });
-//
-//
-//   var moonOpacity = new TimelineMax({
-//     repeat: -1
-//   });
-//
-//   if (hours > 17) {
-//     moonOpacity.set("#moon-img", {
-//       opacity: (hours - 17) / 6
-//     })
-//     moonOpacity.to("#moon-img", 10, {
-//       opacity: 1
-//     }).to("#moon-img", 21700, {
-//       opacity: 0
-//     });
-//   } else {
-//     moonOpacity.set("#moon-img", {
-//       opacity: 1
-//     })
-//     moonOpacity.to("#moon-img", 21700, {
-//       opacity: 0
-//     });
-//   }
-// }());
-
 
 
 console.log("Welcome to the console!");
